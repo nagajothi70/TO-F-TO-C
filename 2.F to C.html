@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    <h1>Fahrenheit to Celsius </h1>
+    <input id="input" type="number" placeholder="Enter Fahrenheit"> <br>
+    <button type="submit" onclick="call()">Convert to Celsius</button> <br>
+    
+    <p id="output"></p>
+    <script>
+        function call()
+        {
+            let input = document.getElementById("input").value
+            let cel = (5/9) * (input-32)
+            document.getElementById("output").innerHTML="Temperature is "+cel+"°"+"celsius "
+        }
+    </script>
+</body>
+</html>
